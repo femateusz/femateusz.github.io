@@ -1,87 +1,191 @@
-h1{
-  color:#3cb878
+body{
+	display: block;
+	margin: 0 7%;
+	padding: 0 10px;
+	position: relative;
 }
-.container{
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
-}
-.newsLetter{
-  color: grey;
-  margin-top: 20px;
-  border: solid thin #cfcfcf;
-  padding: 10px;
-  border-radius: 3px;
-  padding-bottom: 20px;
-  
-  position: absolute;
-  left: 35%;
-}
-.newsLetter #acceptFields{
+nav{
+	background: black;
+  font-weight: bold;
+	width: 1278px;
+  height: 50px;
+  margin 0;
   position: relative;
-  top: 1.5px;
 }
-.newsLetter button{
-  background-color: #3cb878;
-  border: none;
-  color: white;
-  display: block;
-  width: 100%;
-  height: 30px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-.newsLetter input#emailAddress{
-  display: block;
-  width: 100%;
-  height: 30px;
-  margin-bottom: 4px;
-  border: solid 1px #cfcfcf;
-  border-radius: 3px;
-  
-  box-sizing: border-box;
-}
-.newsLetter h3{
-  margin-top: 0;
-}
-.newsLetter #closex{
-  position: absolute;
-  top: 0;
-  right: 4px;
-}
-#questionMark{
-  background: #3cb878;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: white;
-  font-size: 70px;
-  text-align: center;
-  position: fixed; /*Ez meghatározza fixen a pozíciót*/
-  right: 30px;/*Helyi jelőlő jobb*/
-  bottom: 30px;/*helyi jelőlő alulról*/
-  box-shadow: 0px 0px 3px 3px grey; /*árnyék*/
-  cursor: pointer; /*Ha egérrel rámutunk, akkor kéz jelenik meg*/
-}
-#cardHolder{
-  display: flex;/* flexbox használata */
-  justify-content: space-between;/* térköz kihagyása autómatikusan*/
-  
-  align-items: flex-end;
-  
+
+.nav-container{
+	background: url("./images/Star_Wars_Yellow_One_Line_Logo.svg.png");
+	background-size: 1278px 50px;
+	display: flex;
   flex-direction: row;
+  justify-content: start;
+  align-items: center;
   flex-wrap: wrap;
+	height: 50px;
+
+	
 }
-.card{
-  background: #3cb878;
-  width: 180px;
-  text-align: center;
-  color: white;
-  padding: 20px 0 ;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 5px 2px grey;
+.nav-container a{
+	color: #aaa;
+	margin: 0 35px;
+	padding-left: 25px;
+	text-align: center;
+	cursor: pointer;
+	font-family: 'Akaya Telivigala', cursive;
+	letter-spacing: 0.3em;
+	margin: 0 15% 0 0;
 }
-.card h3{
-  margin: 0;
+a:hover{
+	background: grey;
+	color: yellow;
+}
+
+header{
+	width: auto;
+ 	margin: 0;
+	position: fixed;
+	z-index: 1;
+}
+.left{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 50px;
+	width: 65%;
+}
+.right{
+	margin-top: 50px;
+}
+.picture{
+  position: relative;
+  width: 639px;
+  height: 500px;
+  background: url("./images/first-website-header2.png") no-repeat;
+  background-size: 640px 480px;
+}
+.picture-caption{
+ 		position: absolute;
+		bottom: 5%;
+		left: 25%;
+		font-family: 'Indie Flower', cursive;;
+		color: #323;
+		font-weight: bold;
+		line-height: 1.5em;
+}
+.hy{
+		font-weight: 300;
+		font-size: 20px; 
+}
+.name{
+ 	font-size: 30px;
+	letter-spacing: 0.03em;
+} 
+main{
+  	display: flex;
+		justify-content: center;
+		width: 100%%;
+		font-family: 'Indie Flover', cursive;
+		color: #ddd;
+		line-height: 1.5em;
+		font-size: 1.2em;
+		background: #aaa;
+} 
+.container{
+  display: block;
+	width: auto;
+}
+
+ul{
+  list-style: square;
+  font-size: 15px;
+  }
+.last{
+	margin-bottom: 50px;
+}
+.section-list{
+	padding: 0 45px;
+	font-size: 1.2em;
+}
+.section-list li{
+		font-size: 0.75em;
+		line-height: 1.4em;
+}
+section{
+	text-align: justify;
+}
+
+summary{
+	text-align: justify;
+	font-size: 1.2em;
+	padding: 0 45px;
+}
+blockquote {
+		position: relative;
+		margin: 0 60px;
+		
+		display: block;
+		font-family: 'Akaya Telivigala', cursive;
+		color: #ddd;
+		background-color: #aaa;
+		font-size: 5em;
+		padding: 60px 0;
+		text-align: justify;
+		line-height: 1.5em;
+		border: solid 2px #85144B;
+}
+blockquote::before {
+	position: absolute;
+	content: "”";
+	font-size: 150px;
+	top: 20px;
+	left: 25px;
+}
+.disturb {
+		padding: 60px 50px 55px 80px;
+		width: 500px;
+		text-align: left;
+}
+
+h2{
+		margin: 65px 0;
+		font-weight: bold;
+		font-size: 1.4em;
+		letter-spacing: 0.09em;
+ 		text-transform: uppercase;
+	
+}
+h3 {
+		font-weight: bold;
+		font-size: 1.3em;
+		margin: 0;
+}
+section h3:nth-of-type(2), section h3:nth-of-type(3) {
+		margin-top: 40px;
+}
+h4{
+	margin: 0;
+	font-style: italic;
+}
+
+.separator-line {
+		width:100%;
+		height: 3px;
+		background: #85144B;
+		margin-top: 50px;
+}
+#top-link{
+	display: grid;
+	position: fixed;
+	right: 10px;
+	bottom: 5px;
+	width: 50px;
+	height: 50px;
+	border: solid 2px black;
+	text-decoration: none;
+	text-align: center;
+	align-content: center;
+}
+#top-link img{
+	width: 50px;
+	height: 50px;
 }
